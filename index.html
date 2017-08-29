@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>conventor</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <link href="stylesheets/css.css" rel="stylesheet" type="text/css" />   
+        <script src="javascript/swap.js"></script>
+        <script src="javascript/convertor.js"></script>
+        <script src="javascript/value.js"></script>
+        <script src="javascript/error.js"></script>
+        
+       
+      
+        
+       
+    </head>
+    <body>
+
+        
+        
+        <div class="center">
+            <h1>CURRENCY CONVERTOR</h1>
+      <form name="data_entry" >
+          <div class="value1">
+		<select class="currency" id="from" name="from" onchange="ChangeCurrencyList(); convert('C');" >
+                    <option  value="" selected>Chose value</option>
+                    <option  value="EUR">EUR</option>
+                    <option value="USD">USD</option>
+                     <option value="RSD">RSD</option>
+                </select>
+           <input class="input_value" id="firstinput" type="text" value="1" onkeyup="convert('C');" onchange="myFunction()" >
+            <p id="message"></p>              
+           </div>
+              
+                <input class="arrow" type="button"   onclick="swapT()">
+          <div class="value2">
+             <select class="currency" id="to" name="to"  onchange="convert('F')">
+                 
+                </select>
+           <input class="input_value" type="" id="secondinput" onkeyup="convert('F')">
+            </div>
+     <p id="message"></p>
+               <input class="button" type="button" name="reset_form" value="Reset" onclick="this.form.reset();">
+			
+			</form>
+        
+        </div>
+
+    </body>
+
+</html>
+
+
+
